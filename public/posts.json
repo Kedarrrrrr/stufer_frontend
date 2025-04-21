@@ -1,0 +1,91 @@
+[
+  {
+    "fullName": "Kedar Patil",
+    "profilePicture": "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, reiciendis! Sapiente, laboriosam...",
+    "images": [
+      "https://img.freepik.com/photos-premium/toit-sale-beton-vide-fond-magnifique-horizon-ville-new-york-pendant-journee-maquette_258654-7861.jpg?semt=ais_hybrid&w=740",
+      "https://img.freepik.com/premium-photo/empty-concrete-rooftop-background-beautiful-new-york-city-skyline-sunset-mock-up_258654-6686.jpg",
+      "https://img.freepik.com/free-photo/big-city_1127-3102.jpg?semt=ais_hybrid&w=740"
+    ],
+    "duration": "1 day"
+  },
+  {
+    "fullName": "Aisha Khan",
+    "profilePicture": "https://t4.ftcdn.net/jpg/06/02/80/95/360_F_602809556_HsRkD6daMX14r9JV1bL2hfZBrKm72ZlG.jpg",
+    "description": "Beautiful evening by the lake 🌅",
+    "images": [
+      "https://content.skyscnr.com/m/4a6d281e7c2b545f/original/eyeem_105200848-jpg.jpg?resize=1800px:1800px&quality=100",
+      "https://i.natgeofe.com/n/8b5467da-45ef-4f72-86a1-5c8791c3b094/lakes_GettyImages-1279222571_HR.jpg",
+      "https://www.tamilnadutourism.tn.gov.in/img/pages/vertical/chittar-lake-1734694439_96aeaa2db547f10764b1.jpg"
+    ],
+    "duration": "3 hrs"
+  },
+  {
+    "fullName": "Sanjay Patel",
+    "profilePicture": "https://img.freepik.com/free-photo/portrait-serious-man_23-2148779998.jpg?w=360",
+    "description": "Had a great time with friends today at the beach! 🌊",
+    "images": [
+      "https://images.unsplash.com/photo-1603477849227-705c424d1d80?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJvcGljYWwlMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://img.freepik.com/free-photo/beautiful-tropical-beach_1203-6653.jpg?semt=ais_hybrid&w=740",
+      "https://i.pinimg.com/236x/d2/dc/08/d2dc08518f52e6f6240a7fb6b76007f4.jpg"
+    ],
+    "duration": "6 hours"
+  },
+  {
+    "fullName": "Nina Roy",
+    "profilePicture": "https://t3.ftcdn.net/jpg/06/01/50/96/360_F_601509638_jDwIDvlnryPRhXPsBeW1nXv90pdlbykC.jpg",
+    "description": "Check out this sunset view from the hilltop! 🏞️",
+    "images": [
+      "https://cdn.pixabay.com/photo/2024/02/15/08/50/sunset-8574963_1280.jpg",
+      "https://media.istockphoto.com/id/1144925856/photo/beautiful-sunset-view-from-hilltop.jpg?s=170667a&w=0&k=20&c=MUsgpcWExqnsg_01tij7GbGdBQF9fGMbLfLuaIwNtGM=",
+      "https://images.pexels.com/photos/18163115/pexels-photo-18163115/free-photo-of-forested-hilltop-at-sunset.jpeg"
+    ],
+    "duration": "2 hours"
+  },
+  {
+    "fullName": "Ravi Kumar",
+    "profilePicture": "https://images.pexels.com/photos/910143/pexels-photo-910143.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "description": "Exploring the city! So many cool places to visit. 🏙️",
+    "images": [
+      "https://static.vecteezy.com/system/resources/thumbnails/049/855/296/small_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg",
+      "https://m.media-amazon.com/images/I/71RWw4rR6LL.jpg",
+      "https://plus.unsplash.com/premium_photo-1667311649552-2cfab63bdcfc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJlJTIwaW1hZ2VzfGVufDB8fDB8fHww"
+    ],
+    "duration": "5 hours"
+  },
+  {
+    "fullName": "Maya Sharma",
+    "profilePicture": "https://t4.ftcdn.net/jpg/05/58/89/69/360_F_558896972_un5SuLBtmocbehvKQVfrKt95CEZ08JV9.jpg",
+    "description": "Delicious food at the new restaurant in town! 🍽️",
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://www.ohotelsindia.com/pune/images/be725ee1419605d73674fa364406505a.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwXiCGMOJWVLaINybpK_RMbZT35VPCQ6S7Q&s"
+      
+    ],
+    "duration": "1 hour"
+  },
+  {
+    "fullName": "Ali Khan",
+    "profilePicture": "https://marketplace.canva.com/z3nJ8/MAEWf5z3nJ8/1/tl/canva-happy-young-man-posing-for-headshot-portrait-profile-picture-indoors-MAEWf5z3nJ8.jpg",
+    "description": "Chilling with the crew at the park! 🌳",
+    "images": [
+      "https://t3.ftcdn.net/jpg/02/18/49/68/360_F_218496887_9siuCRoSgX94QoT4DGSDPHfe6pK0PwdP.jpg",
+      "https://t4.ftcdn.net/jpg/00/76/25/75/360_F_76257590_OMqEbhnSnz30cLj6xAG511xSZrJabcsq.jpg",
+      "https://media.istockphoto.com/id/841278554/photo/beautiful-morning-light-in-public-park-with-green-grass-field.jpg?s=612x612&w=0&k=20&c=rXOM3Uq9kPbpM5IWnCAnffHOP8KKpVKCJDMuNBlTNls="
+    ],
+    "duration": "4 hours"
+  },
+  {
+    "fullName": "Sofia Ahmed",
+    "profilePicture": "https://media.istockphoto.com/id/1357535422/video/smiling-teenager-girl-pose-in-library-pose-at-camera.jpg?b=1&s=640x640&k=20&c=7Cj31GMVyCdYCRAgGfM-yy1Qw2jLCM6Ljl0TBLMN87Y=",
+    "description": "Had a lovely walk in the garden today! 🌷",
+    "images": [
+      "https://static3.depositphotos.com/1000462/125/i/450/depositphotos_1253897-stock-photo-garden.jpg",
+      "https://st2.depositphotos.com/1583474/7748/i/450/depositphotos_77482716-stock-photo-beautiful-flower.jpg",
+      "https://img.freepik.com/premium-photo/basket-flowers-trunk-old-bicycle-provence-style-garden-decor-flower-delivery-online-orde_78492-6349.jpg?semt=ais_hybrid&w=740"
+    ],
+    "duration": "3 hours"
+  }
+]
