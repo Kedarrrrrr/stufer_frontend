@@ -1,27 +1,32 @@
 import "./Navbar.css";
+import { Navbar, Container, Nav, Form, FormControl, NavDropdown } from "react-bootstrap";
 
+const NavBar = () => {
+  return (
+    <Navbar expand="lg" className="custom-navbar" sticky="top">
+      <Container fluid>
+        <Navbar.Brand className="text-white logo">StuFer</Navbar.Brand>
 
+        <Navbar.Toggle aria-controls="navbar-nav" />
 
-const NavBar = () =>{
-    return(
-        <>
-        <div className="container">
-            <div className="navBar">
-            <div className="nav">
-                <div className="logo"><p style={{fontSize:"30px" , fontWeight:"600" , margin:"0.6rem" , padding:"0.3rem"}}>StuFer</p></div>
-                
-                <input type="text" className="search-bar" placeholder= "Search Someone"/>
+        <Navbar.Collapse id="navbar-nav">
+          <Form className="mx-auto w-50">
+            <FormControl
+              type="search"
+              placeholder="Search Someone"
+              className="search-bar"
+            />
+          </Form>
 
-                <div className="nav-items">
-                    <p>For you</p>
-                    <p>Friends</p>
-                    <p>Community</p>
-                </div>
-            </div>
-            </div>
-        </div>
-        </>
-    )
-}
+          <Nav className="ms-auto nav-items text-white">
+            <Nav.Link href="#foryou" className="text-white">For you</Nav.Link>
+            <Nav.Link href="#friends" className="text-white">Friends</Nav.Link>
+            <Nav.Link href="#community" className="text-white">Community</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
 
-export default NavBar
+export default NavBar;

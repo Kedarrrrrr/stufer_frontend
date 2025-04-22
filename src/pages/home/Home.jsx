@@ -27,11 +27,11 @@ const Home = () => {
                 alt={`${post.fullName}'s profile`}
               />
               <p className="postUserName">{post.fullName}</p>
-              <p className="postDuration">{post.duration}</p>
+          
             </div>
 
             <div className="post-content">
-              <p className="postCaption">{post.description}</p>
+              <p className="postCaption">{post.caption}</p>
 
               <div className="postMedia">
                 {post.images.map((img, imgIndex) => (

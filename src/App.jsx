@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate, Outlet, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
 import Login from "./pages/login/Login"
 import Register from "./pages/register/Register"
 import LeftBar from "./components/leftBar/LeftBar"
@@ -11,8 +11,6 @@ import RightBar from "./components/rightBar/RightBar.jsx"
 
 
 function App() {
-
-
 
   const Layout =()=>{
     return(
@@ -27,19 +25,13 @@ function App() {
     )
   }
 
-
-
-
   const router=createBrowserRouter([
     {
       path: "/",
       element:
-         (
-          
-            <Layout />
-          
-          
-         ),
+         
+          <Layout />,
+         
       
       children: [
         {

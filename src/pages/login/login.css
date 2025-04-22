@@ -272,3 +272,15 @@ border-radius: 10px;
       width: 50%;
 }
 }
+.error-message {
+    color: #ff4d4d;
+    margin: 0.5rem 0;
+    text-shadow: 1px 1px 10px black;
+  }
+  
+  .success-message {
+    color: #4dff88;
+    margin: 0.5rem 0;
+    text-shadow: 1px 1px 10px black;
+  }
+  
