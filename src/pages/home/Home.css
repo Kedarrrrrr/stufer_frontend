@@ -12,7 +12,9 @@ body{
 
 .container{
     margin: 2.5rem 0;
+    
 }
+
 
 .post-box{
     border: 1px solid rgb(197, 197, 197);
@@ -27,6 +29,9 @@ body{
     margin-left: 10rem;
 
 }
+
+
+
 
 .profile-pic{
     width: 36px;
@@ -73,7 +78,6 @@ body{
     height: 350px;
     margin: 1.5rem 0;
 }
-
 
 
 

@@ -7,6 +7,7 @@ import NavBar from "./components/navBar/NavBar"
 import Home from "./pages/home/Home"
 import Profile from "./components/profile/Profile"
 import RightBar from "./components/rightBar/RightBar.jsx"
+import AddPostPopup from "./components/leftBar/AddPostPopup.jsx"
 
 
 
@@ -59,6 +60,10 @@ function App() {
     {
       path: "/register",
       element: <Register />,
+    },
+    {
+      path: "/addpost",
+      element: <AddPostPopup />,
     },
   ]);
   

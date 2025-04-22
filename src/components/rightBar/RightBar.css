@@ -1,6 +1,9 @@
 
 .pos-fixed{
     position: fixed;
+  top: 6rem;
+  right: 2rem;
+  z-index: 1; /* Lower z-index than the popup */
 }
 
 .right{
@@ -16,7 +19,7 @@
     overflow-y: scroll;
     padding: 2rem;
     margin-left: 7rem;
-   
+    gap: 1rem;  
 }
 
 .heading{

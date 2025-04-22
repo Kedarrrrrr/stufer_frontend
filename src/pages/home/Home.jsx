@@ -3,6 +3,9 @@ import "./Home.css";
 import"./Utility.css";
 import React, { useEffect, useState } from 'react';
 
+import { IoHeartOutline } from "react-icons/io5";
+import { GoComment } from "react-icons/go";
+
 
 
 const Home = () => {
@@ -17,6 +20,7 @@ const Home = () => {
 
   return (
     <div className="container">
+      <div className="margin-left">
       {posts.map((post, index) => (
         <div className="post-box" key={index}>
           <div className="posts">
@@ -28,6 +32,7 @@ const Home = () => {
               />
               <p className="postUserName">{post.fullName}</p>
               <p className="postDuration">{post.duration}</p>
+              
             </div>
 
             <div className="post-content">
@@ -41,9 +46,15 @@ const Home = () => {
                 ))}
               </div>
             </div>
+
+            <div className="post-interact">
+                <IoHeartOutline style={{fontSize:"24px", marginRight:"1rem"}}/>
+                <GoComment style={{fontSize:"22px"}}/>
+            </div>
           </div>
         </div>
       ))}
+      </div>
     </div>
   );
 };

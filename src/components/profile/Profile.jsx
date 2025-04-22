@@ -1,74 +1,95 @@
+import React, { useState } from "react";
 import "./Profile.css";
- import { FaFacebook } from "react-icons/fa";
- import { FaInstagram } from "react-icons/fa";
- import { FaLinkedin } from "react-icons/fa6";
- import { FaXTwitter } from "react-icons/fa6";
- import { FaPinterest } from "react-icons/fa";
- import { MdPlace } from "react-icons/md";
- import { IoLanguage } from "react-icons/io5";
- import { MdEmail } from "react-icons/md";
- import { BsThreeDotsVertical } from "react-icons/bs";
+import Home from "../../pages/home/Home";
+import "./AddPostPopup.css";
+import { GoFileMedia } from "react-icons/go";
 
- 
- const Profile = () => {
-   return (
-    <div className="container">
-     <div className="profile-main">
-       <div className="images">
-         <img
-           src="https://images.pexels.com/photos/13440765/pexels-photo-13440765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-           alt=""
-           className="cover"
-         />
-         <img
-           src="https://images.pexels.com/photos/14028501/pexels-photo-14028501.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-           alt=""
-           className="profilePic"
-         />
-       </div>
-       <div className="profileContainer">
-         <div className="uInfo">
-           <div className="left">
-             <a href="http://facebook.com">
-               <FaFacebook  fontSize={15} />
-             </a>
-             <a className="profile-a" href="http://facebook.com">
-               <FaInstagram fontSize={15} />
-             </a>
-             <a className="profile-a" href="http://facebook.com">
-               <FaXTwitter fontSize={15} />
-             </a>
-             <a className="profile-a" href="http://facebook.com">
-               <FaLinkedin fontSize={15} />
-             </a>
-             <a className="profile-a" href="http://facebook.com">
-               <FaPinterest fontSize={15} />
-             </a>
-           </div >
-           <div className="center">
-             <span className="profile-span">kedar</span>
-             <div className="info">
-               <div className="item">
-               <MdPlace />
-                 <span>kolhapur</span>
-               </div>
-               <div className="item">
-               <IoLanguage />
-                 <span>english,hindi,marathi</span>
-               </div>
-             </div>
-             <button className="profile-button">follow</button>
-           </div>
-           <div className="right">
-           <MdEmail />
-           <BsThreeDotsVertical />
-           </div>
-         </div>
-       {/* <Posts/> */}
-       </div>
-     </div>
-     </div>
-   );
- };
- 
- export default Profile;
+export default function Profile() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [media, setMedia] = useState(null);
+
+  const togglePopup = () => setIsOpen(!isOpen);
+
+  const handleMediaChange = (e) => {
+    const file = e.target.files[0];
+    if (file) setMedia(file);
+  };
+
+  return (
+    <>
+      <div className="display-flex">
+        <div className="profile-container">
+          <div className="profile-header">
+            <img
+              className="avatar"
+              src="https://i.pravatar.cc/150?img=5"
+              alt="Profile"
+            />
+            <div>
+              <h2 className="username">kedar patil</h2>
+              <p className="handle">@kedarrrrr</p>
+
+              <span className="followers">
+                <span>200</span>followers
+              </span>
+            </div>
+          </div>
+
+          <div className="tabs">
+            {/* add post */}
+            <div className="popup-container">
+              {isOpen && (
+                <div className="popup-overlay">
+                  <div className="popup-box">
+                    <h2 style={{ color: "white" }}>Add Post</h2>
+                    <form className="popup-form">
+                      <textarea
+                        placeholder="Post Description"
+                        className="popup-textarea"
+                      ></textarea>
+
+                      {/* File Upload */}
+                      <div className="media-upload">
+                        <label
+                          htmlFor="media-input"
+                          className="upload-icon-btn"
+                          title="Upload Image or Video"
+                        >
+                          <GoFileMedia />
+                        </label>
+                        <input
+                          type="file"
+                          id="media-input"
+                          accept="image/,video/"
+                          onChange={handleMediaChange}
+                        />
+                        {media && (
+                          <span className="media-name">{media.name}</span>
+                        )}
+                      </div>
+                      <div className="addpost-popup-btn">
+                        <button type="submit" className="popup-submit">
+                          Add
+                        </button>
+                        <button className="popup-submit" onClick={togglePopup}>
+                          cancel
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <button className="tab" onClick={togglePopup}>
+              Add Post
+            </button>
+          </div>
+          <div></div>
+        </div>
+
+        <Home />
+      </div>
+    </>
+  );
+}
