@@ -12,6 +12,7 @@ import "./Profile.css";
  
  const Profile = () => {
    return (
+    <div className="container">
      <div className="profile-main">
        <div className="images">
          <img
@@ -65,6 +66,7 @@ import "./Profile.css";
          </div>
        {/* <Posts/> */}
        </div>
+     </div>
      </div>
    );
  };

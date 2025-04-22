@@ -1,0 +1,274 @@
+.login-section{
+    height: 100vh;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+.login-section-card{
+display: flex;
+background-color: black;
+width: 50%;
+border-radius: 10px;
+ min-height: 600px;
+ overflow: hidden;
+ border: 2px solid white;
+}
+
+
+.login-section-card-left{
+    flex: 1;
+    background:  url("https://images.pexels.com/photos/3483786/pexels-photo-3483786.jpeg?auto=compress&cs=tinysrgb&w=600")center;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.login-section-card-left-heading{
+    font-size:80px;
+    line-height:100px ;
+    text-shadow: 1px 1px 20px black;
+     
+}
+
+
+.login-section-card-left-span{
+    
+    font-size: 14px;
+}
+
+.login-section-card-left-button{
+    width: 50%;
+    padding: 10px;
+    border: double;
+    background-color:black;
+    color: white;
+    border-radius: 7px;
+}
+.login-section-card-left-button:hover{
+    border: none;
+    background-color:white;
+    color: black;
+}
+
+.login-section-card-right{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+.login-section-card-right-heading{
+    color:#555
+}
+.login-section-card-right-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.login-section-card-right-form-input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 10px;
+}
+.login-section-card-right-button{
+    width: 50%;
+    padding: 10px;
+    border: double;
+    background-color:black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+/* regiter */
+.register-section{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+.register-section-card{
+display: flex;
+flex-direction: row-reverse;
+background-color: black;
+width: 50%;
+border-radius: 10px;
+ min-height: 600px;
+ overflow: hidden;
+ border: 2px solid white;
+}
+
+
+.register-section-card-left{
+    flex: 1;
+    background: url("https://images.pexels.com/photos/3331837/pexels-photo-3331837.jpeg?auto=compress&cs=tinysrgb&w=600")center;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.register-section-card-left-heading{
+    font-size:60px;
+    line-height:100px ;
+    text-shadow: 1px 1px 20px black;
+     
+}
+
+
+.register-section-card-left-span{
+    font-size: 14px;
+}
+
+.register-section-card-left-button{
+    width: 50%;
+    padding: 10px;
+    border: double;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+}
+.register-section-card-left-button:hover{
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.register-section-card-right{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+.register-section-card-right-heading{
+    color:#555
+}
+.register-section-card-right-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.register-section-card-right-form-input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 10px;
+}
+.register-section-card-right-button{
+    width: 50%;
+    padding: 10px;
+    border: double;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.register-section-card-right-button:hover{
+    border: none;
+    background-color: white;
+    color: black;
+
+}
+.login-section-card-right-button:hover{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+/* responsive  */
+ 
+
+ 
+@media (max-width: 900px) {
+    .login-section-card,
+    .register-section-card {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .login-section-card-left,
+    .register-section-card-left,
+    .login-section-card-right,
+    .register-section-card-right {
+      padding: 30px;
+    }
+  
+    .login-section-card-left-heading,
+    .register-section-card-left-heading {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  
+    .login-section-card-left-button,
+    .register-section-card-left-button,
+    .login-section-card-right-button,
+    .register-section-card-right-button {
+      width: 100%;
+    }
+  }
+  
+   
+  @media (min-width: 900px) and (max-width: 1024px) {
+    .login-section-card,
+    .register-section-card {
+      width: 80%;
+    }
+  
+    .login-section-card-left,
+    .register-section-card-left,
+    .login-section-card-right,
+    .register-section-card-right {
+      padding: 40px;
+    }
+  
+    .login-section-card-left-heading,
+    .register-section-card-left-heading {
+      font-size: 60px;
+      line-height: 70px;
+    }
+  
+    .login-section-card-left-button,
+    .register-section-card-left-button,
+    .login-section-card-right-button,
+    .register-section-card-right-button {
+      width: 75%;
+    }
+  }
+  
+  
+  @media (min-width: 1025px) {
+    .login-section-card,
+    .register-section-card {
+      width: 50%;
+    }
+  
+    .login-section-card-left-button,
+    .register-section-card-left-button,
+    .login-section-card-right-button,
+    .register-section-card-right-button {
+      width: 50%;
+}
+}

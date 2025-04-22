@@ -1,66 +1,141 @@
 import "./RightBar.css";
 
-import React, { useState, useRef, useEffect } from 'react';
-
-import { MdOutlinePhoto } from "react-icons/md";
-
+import { IoHeartOutline } from "react-icons/io5";
+import { GoComment } from "react-icons/go";
 
 
 
 const RightBar = () => {
 
-        const [value, setValue] = useState('');
-        const textareaRef = useRef(null);
-      
-        useEffect(() => {
-          const textarea = textareaRef.current;
-          if (textarea) {
-            textarea.style.height = 'auto'; 
-            textarea.style.height = `${textarea.scrollHeight}px`; 
-          }
-        }, [value]);
 
   return (
     <>
-      <div className="container">
-        <div className="rightBar">
-        <div className="create-post">
-          <div id="post-heading">
-            <p>Create Post</p>
-            
+    <div className="container">
+      <div className="pos-fixed">
+      <div className="heading">
+        <p>Notifications</p>
+      </div>
+      <div className="right">
+        <div style={{border:" 1px solid rgb(197, 197, 197)" , minWidth:"400px" , height:"max-content" , borderRadius:"10px"}}>
+        <div className="right-header">
+          <div className="notify-picture">
+            <img src="https://t4.ftcdn.net/jpg/06/02/80/95/360_F_602809556_HsRkD6daMX14r9JV1bL2hfZBrKm72ZlG.jpg" alt="" width={"40px"} height={"40px"} style={{borderRadius:"50%"}}/>
           </div>
 
-          <textarea
-            ref={textareaRef}
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            placeholder="Share Your Thoughts"
-            style={{
-              width: "100%",
-              minHeight: "150px",
-              resize: "none",
-              overflow: "hidden",
-              fontSize: "14px",
-              padding: "8px",
-              borderRadius: "4px",
-              border: "1px solid #ccc",
-              backgroundColor: "transparent",
-              color: "white",
-              marginTop:"2rem"
-            }}
-          />
-
-          <div>
-
+          <div className="notify-name">
+            <p>Kedar Patil</p>
           </div>
-          <MdOutlinePhoto id="mediaLogo" style={{fontSize:"30px", marginBottom:"2rem"}}/>
-          <div>
-            <button id="post-btn">Share</button>
+
+          <div className="notify-duration">
+            <p>8hrs</p>
           </div>
         </div>
+
+        <div className="right-content">
+          <div className="right-desc">
+            <p>hey how are you guys!</p>
+          </div>
+
+          <div className="right-icon">
+              <IoHeartOutline style={{fontSize:"24px", marginRight:"1rem"}}/>
+              <GoComment style={{fontSize:"22px"}}/>
+          </div>
+          
+        </div>
+        </div>
+
+        {/* //second notification */}
+
+        <div style={{border:" 1px solid rgb(197, 197, 197)", minWidth:"400px" , height:"max-content" , borderRadius:"10px"}}>
+        <div className="right-header">
+          <div className="notify-picture">
+            <img src="https://t4.ftcdn.net/jpg/06/02/80/95/360_F_602809556_HsRkD6daMX14r9JV1bL2hfZBrKm72ZlG.jpg" alt="" width={"40px"} height={"40px"} style={{borderRadius:"50%"}}/>
+          </div>
+
+          <div className="notify-name">
+            <p>Kedar Patil</p>
+          </div>
+
+          <div className="notify-duration">
+            <p>8hrs</p>
+          </div>
+        </div>
+
+        <div className="right-content">
+          <div className="right-desc">
+            <p>hey how are you guys!</p>
+          </div>
+
+          <div className="right-icon">
+              <IoHeartOutline style={{fontSize:"24px", marginRight:"1rem"}}/>
+              <GoComment style={{fontSize:"22px"}}/>
+          </div>
+          
+        </div>
+        </div>
+
+
+        <div style={{border:" 1px solid rgb(197, 197, 197)", minWidth:"400px" , height:"max-content" , borderRadius:"10px"}}>
+        <div className="right-header">
+          <div className="notify-picture">
+            <img src="https://t4.ftcdn.net/jpg/06/02/80/95/360_F_602809556_HsRkD6daMX14r9JV1bL2hfZBrKm72ZlG.jpg" alt="" width={"40px"} height={"40px"} style={{borderRadius:"50%"}}/>
+          </div>
+
+          <div className="notify-name">
+            <p>Kedar Patil</p>
+          </div>
+
+          <div className="notify-duration">
+            <p>8hrs</p>
+          </div>
+        </div>
+
+        <div className="right-content">
+          <div className="right-desc">
+            <p>hey how are you guys!</p>
+          </div>
+
+          <div className="right-icon">
+              <IoHeartOutline style={{fontSize:"24px", marginRight:"1rem"}}/>
+              <GoComment style={{fontSize:"22px"}}/>
+          </div>
+          
+        </div>
+        </div>
+
+
+        <div style={{border:" 1px solid rgb(197, 197, 197)", minWidth:"400px" , height:"max-content" , borderRadius:"10px"}}>
+        <div className="right-header">
+          <div className="notify-picture">
+            <img src="https://t4.ftcdn.net/jpg/06/02/80/95/360_F_602809556_HsRkD6daMX14r9JV1bL2hfZBrKm72ZlG.jpg" alt="" width={"40px"} height={"40px"} style={{borderRadius:"50%"}}/>
+          </div>
+
+          <div className="notify-name">
+            <p>Kedar Patil</p>
+          </div>
+
+          <div className="notify-duration">
+            <p>8hrs</p>
+          </div>
+        </div>
+
+        <div className="right-content">
+          <div className="right-desc">
+            <p>hey how are you guys!</p>
+          </div>
+
+          <div className="right-icon">
+              <IoHeartOutline style={{fontSize:"24px", marginRight:"1rem"}}/>
+              <GoComment style={{fontSize:"22px"}}/>
+          </div>
+          
+        </div>
+        </div>
+
+
         </div>
       </div>
-
+      </div>
       
     </>
   );

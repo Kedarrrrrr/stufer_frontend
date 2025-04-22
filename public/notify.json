@@ -1,0 +1,61 @@
+{
+    "notifications": [
+      {
+        "id": 1,
+        "name": "Kedar Patil",
+        "message": "Hey how are you guys!",
+        "time": "8hrs",
+        "img": "https://t4.ftcdn.net/jpg/06/02/80/95/360_F_602809556_HsRkD6daMX14r9JV1bL2hfZBrKm72ZlG.jpg"
+      },
+      {
+        "id": 2,
+        "name": "John Doe",
+        "message": "Just dropped a new comment!",
+        "time": "5hrs",
+        "img": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Emily Stone",
+        "message": "Uploaded a new photo 📸",
+        "time": "3hrs",
+        "img": "https://randomuser.me/api/portraits/women/44.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Rahul Singh",
+        "message": "Liked your post!",
+        "time": "1hr",
+        "img": "https://randomuser.me/api/portraits/men/51.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Priya Sharma",
+        "message": "Commented on your story",
+        "time": "30min",
+        "img": "https://randomuser.me/api/portraits/women/52.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Ankit Verma",
+        "message": "Shared your post on his story!",
+        "time": "15min",
+        "img": "https://randomuser.me/api/portraits/men/60.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Sara Lee",
+        "message": "Replied to your comment",
+        "time": "10min",
+        "img": "https://randomuser.me/api/portraits/women/61.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Mike Tyson",
+        "message": "Sent you a follow request",
+        "time": "5min",
+        "img": "https://randomuser.me/api/portraits/men/65.jpg"
+      }
+    ]
+  }
+  
