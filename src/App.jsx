@@ -10,6 +10,7 @@ import RightBar from "./components/rightBar/RightBar.jsx"
 import AddPostPopup from "./components/leftBar/AddPostPopup.jsx"
 import Notification from "./components/Notification/Notification.jsx"
 
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {

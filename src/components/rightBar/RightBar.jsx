@@ -6,8 +6,9 @@ import { GoFileMedia } from "react-icons/go";
 
 
 import { FiPlus } from 'react-icons/fi';
- 
- 
+import { Button } from "react-bootstrap";
+
+
 
 const RightBar = () => {
 
@@ -25,53 +26,56 @@ const RightBar = () => {
   return (
     <>
 
-<div className="popup-container">
-       
-        
-        
- 
-       {isOpen && (
-         <div className="popup-overlay">
-           <div className="popup-box">
-              
-             <h2 style={{color:'white'}} >Add Post</h2>
-             <form className="popup-form">
-                
-               <textarea
-                 placeholder="Post Description"
-                 className="popup-textarea"
-               ></textarea>
- 
-               {/* File Upload */}
-               <div className="media-upload">
-                 <label htmlFor="media-input" className="upload-icon-btn" title="Upload Image or Video">
-                 <GoFileMedia />
-                 </label>
-                 <input
-                   type="file"
-                   id="media-input"
-                   accept="image/,video/"
-                   onChange={handleMediaChange}
-                 />
-                 {media && <span className="media-name">{media.name}</span>}
-               </div>
-                 <div className='addpost-popup-btn'>
-               <button type="submit" className="popup-submit">
-                 Add
-               </button>
-               <button className="popup-submit" onClick={togglePopup}>cancel</button>
-               </div>
-             </form>
-           </div>
-         </div>
-       )}
-     </div>
-    
+      <div className="popup-container">
+
+
+
+
+        {isOpen && (
+          <div className="popup-overlay">
+            <div className="popup-box">
+
+              <h2 style={{ color: 'white' }} >Add Post</h2>
+              <form className="popup-form">
+
+                <textarea
+                  placeholder="Post Description"
+                  className="popup-textarea"
+                ></textarea>
+
+                {/* File Upload */}
+                <div className="media-upload">
+                  <label htmlFor="media-input" className="upload-icon-btn" title="Upload Image or Video">
+                    <GoFileMedia />
+                  </label>
+                  <input
+                    type="file"
+                    id="media-input"
+                    accept="image/,video/"
+                    onChange={handleMediaChange}
+                  />
+                  {media && <span className="media-name">{media.name}</span>}
+                </div>
+                <div className='addpost-popup-btn'>
+                  <Button type="submit" className='w-50' variant="outline-success">
+                    Add
+                  </Button>
+
+                  <Button className='w-50 mx-1' variant="outline-secondary" onClick={togglePopup}>
+                    Cancel
+                  </Button>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
+      </div>
+
       <div className="container">
         <div className="right-post-button">
-          
+
           <button className="plus-button" onClick={togglePopup} >
-           <FiPlus />
+            <FiPlus />
           </button>
         </div>
       </div>

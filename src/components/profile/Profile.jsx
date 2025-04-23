@@ -3,6 +3,7 @@ import "./Profile.css";
 import Home from "../../pages/home/Home";
 import "./AddPostPopup.css";
 import { GoFileMedia } from "react-icons/go";
+import { Button } from "react-bootstrap";
 
 export default function Profile() {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,12 +69,13 @@ export default function Profile() {
                         )}
                       </div>
                       <div className="addpost-popup-btn">
-                        <button type="submit" className="popup-submit">
+                        <Button type="submit" className='w-50' variant="outline-success">
                           Add
-                        </button>
-                        <button className="popup-submit" onClick={togglePopup}>
-                          cancel
-                        </button>
+                        </Button>
+
+                        <Button className='w-50 mx-1' variant="outline-secondary" onClick={togglePopup}>
+                          Cancel
+                        </Button>
                       </div>
                     </form>
                   </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Logout.css'; 
+import './Logout.css';
+import { Button } from 'react-bootstrap';
 
 const Logout = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,19 +11,24 @@ const Logout = () => {
 
   return (
     <div className="popup-container">
-       
-      <button className="popup-btn" onClick={togglePopup}>
+
+      <Button className="popup-btn" variant="outline-danger" onClick={togglePopup}>
         LOG-OUT
-      </button>
+      </Button>
 
       {isOpen && (
         <div className="popup-overlay">
           <div className="popup-box">
-             
+
             <h2>LOG-OUT</h2>
             <p>Are you sure you want to"LOG-OUT"</p>
-            <button className='log-out-button-logout'> log-out </button>
-            <button className='log-out-button-cancel' onClick={togglePopup} > cancel </button>
+
+            <Button variant="outline-danger">
+              LOG-OUT
+            </Button>
+            <Button variant='outline-secondary' onClick={togglePopup}>
+              Cancel
+            </Button>
           </div>
         </div>
       )}
