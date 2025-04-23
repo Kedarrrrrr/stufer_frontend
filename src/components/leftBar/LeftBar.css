@@ -1,8 +1,11 @@
 
 
-
+.container{
+  margin-top: 4rem;
+}
 .profile{
     position: fixed;
+    top: 1rem;
     bottom: 0;
 }
 
