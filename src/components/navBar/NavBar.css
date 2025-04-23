@@ -21,34 +21,22 @@
   padding: 0.3rem;
 }
 
-.search-bar {
-    background-color: black; /* darker background */
-    border: 2px solid rgb(100, 100, 100);
+.search-bar{
+    width: 300px;
+    height: 40px;
+    border: 2px solid rgb(197, 197, 197);
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
-    padding: 0.5rem 1rem;
-    color: rgb(0, 0, 0);
-  }
-  
-  .search-bar::placeholder {
-    color: #e3e3e3; /* light placeholder text */
-  }
-  
-
-
-.nav-items .nav-link {
-  margin-left: 1rem;
-  font-weight: 500;
+    margin: 1.3rem;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
 }
 
-/* Responsive spacing */
-@media (max-width: 768px) {
-  .search-bar {
-    width: 100%;
-    margin: 1rem 0;
-
-  }
-
-  .nav-items {
-    text-align: center;
-  }
+.nav .nav-items{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0.6rem;
+    padding: 1rem;
 }
