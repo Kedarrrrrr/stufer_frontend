@@ -2,7 +2,10 @@
     text-align: center;
     /* padding: 2rem; */
   }
-    
+  
+   
+  
+   
   
   .popup-overlay {
     position: fixed;
@@ -43,7 +46,6 @@
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    color: black;
   }
   
   .popup-textarea {
@@ -63,7 +65,7 @@
   }
   
   .popup-submit:hover {
-    background-color: rgb(63, 63, 63);
+    background-color: white;
     color: black;
   }
   
@@ -100,7 +102,7 @@
   }
   
   .upload-icon-btn:hover {
-    background-color: #484848;
+    background-color: #e0e0e0;
   }
   
   #media-input {

@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate, Outlet, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
 import Login from "./pages/login/Login"
 import Register from "./pages/register/Register"
 import LeftBar from "./components/leftBar/LeftBar"
@@ -8,12 +8,11 @@ import Home from "./pages/home/Home"
 import Profile from "./components/profile/Profile"
 import RightBar from "./components/rightBar/RightBar.jsx"
 import AddPostPopup from "./components/leftBar/AddPostPopup.jsx"
+import Notification from "./components/Notification/Notification.jsx"
 
 
 
 function App() {
-
-
 
   const Layout =()=>{
     return(
@@ -28,19 +27,13 @@ function App() {
     )
   }
 
-
-
-
   const router=createBrowserRouter([
     {
       path: "/",
       element:
-         (
-          
-            <Layout />
-          
-          
-         ),
+         
+          <Layout />,
+         
       
       children: [
         {
@@ -50,6 +43,10 @@ function App() {
         {
           path: "/profile",
           element: <Profile />,
+        },
+        {
+          path: "/notifications",
+          element: <Notification />,
         },
       ],
     },
@@ -61,9 +58,10 @@ function App() {
       path: "/register",
       element: <Register />,
     },
+
     {
-      path: "/addpost",
-      element: <AddPostPopup />,
+      path: "/notifications",
+      element: <Notification />,
     },
   ]);
   

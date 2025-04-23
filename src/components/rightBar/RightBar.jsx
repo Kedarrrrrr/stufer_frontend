@@ -1,142 +1,80 @@
+
 import "./RightBar.css";
+import "./AddPostPopup.css";
+import { useState } from "react";
+import { GoFileMedia } from "react-icons/go";
 
-import { IoHeartOutline } from "react-icons/io5";
-import { GoComment } from "react-icons/go";
 
-
+import { FiPlus } from 'react-icons/fi';
+ 
+ 
 
 const RightBar = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [media, setMedia] = useState(null);
+
+  const togglePopup = () => setIsOpen(!isOpen);
+
+  const handleMediaChange = (e) => {
+    const file = e.target.files[0];
+    if (file) setMedia(file);
+  };
 
 
   return (
     <>
-    <div className="container">
-      <div className="pos-fixed">
-      <div className="heading">
-        <p>Notifications</p>
-      </div>
-      <div className="right">
-        <div style={{border:" 1px solid rgb(197, 197, 197)" , minWidth:"400px" , height:"max-content" , borderRadius:"10px"}}>
-        <div className="right-header">
-          <div className="notify-picture">
-            <img src="https://t4.ftcdn.net/jpg/06/02/80/95/360_F_602809556_HsRkD6daMX14r9JV1bL2hfZBrKm72ZlG.jpg" alt="" width={"40px"} height={"40px"} style={{borderRadius:"50%"}}/>
-          </div>
 
-          <div className="notify-name">
-            <p>Kedar Patil</p>
-          </div>
-
-          <div className="notify-duration">
-            <p>8hrs</p>
-          </div>
-        </div>
-
-        <div className="right-content">
-          <div className="right-desc">
-            <p>hey how are you guys!</p>
-          </div>
-
-          <div className="right-icon">
-              <IoHeartOutline style={{fontSize:"24px", marginRight:"1rem"}}/>
-              <GoComment style={{fontSize:"22px"}}/>
-          </div>
+<div className="popup-container">
+       
+        
+        
+ 
+       {isOpen && (
+         <div className="popup-overlay">
+           <div className="popup-box">
+              
+             <h2 style={{color:'white'}} >Add Post</h2>
+             <form className="popup-form">
+                
+               <textarea
+                 placeholder="Post Description"
+                 className="popup-textarea"
+               ></textarea>
+ 
+               {/* File Upload */}
+               <div className="media-upload">
+                 <label htmlFor="media-input" className="upload-icon-btn" title="Upload Image or Video">
+                 <GoFileMedia />
+                 </label>
+                 <input
+                   type="file"
+                   id="media-input"
+                   accept="image/,video/"
+                   onChange={handleMediaChange}
+                 />
+                 {media && <span className="media-name">{media.name}</span>}
+               </div>
+                 <div className='addpost-popup-btn'>
+               <button type="submit" className="popup-submit">
+                 Add
+               </button>
+               <button className="popup-submit" onClick={togglePopup}>cancel</button>
+               </div>
+             </form>
+           </div>
+         </div>
+       )}
+     </div>
+    
+      <div className="container">
+        <div className="right-post-button">
           
-        </div>
-        </div>
-
-        {/* //second notification */}
-
-        <div style={{border:" 1px solid rgb(197, 197, 197)", minWidth:"400px" , height:"max-content" , borderRadius:"10px"}}>
-        <div className="right-header">
-          <div className="notify-picture">
-            <img src="https://t4.ftcdn.net/jpg/06/02/80/95/360_F_602809556_HsRkD6daMX14r9JV1bL2hfZBrKm72ZlG.jpg" alt="" width={"40px"} height={"40px"} style={{borderRadius:"50%"}}/>
-          </div>
-
-          <div className="notify-name">
-            <p>Kedar Patil</p>
-          </div>
-
-          <div className="notify-duration">
-            <p>8hrs</p>
-          </div>
-        </div>
-
-        <div className="right-content">
-          <div className="right-desc">
-            <p>hey how are you guys!</p>
-          </div>
-
-          <div className="right-icon">
-              <IoHeartOutline style={{fontSize:"24px", marginRight:"1rem"}}/>
-              <GoComment style={{fontSize:"22px"}}/>
-          </div>
-          
-        </div>
-        </div>
-
-
-        <div style={{border:" 1px solid rgb(197, 197, 197)", minWidth:"400px" , height:"max-content" , borderRadius:"10px"}}>
-        <div className="right-header">
-          <div className="notify-picture">
-            <img src="https://t4.ftcdn.net/jpg/06/02/80/95/360_F_602809556_HsRkD6daMX14r9JV1bL2hfZBrKm72ZlG.jpg" alt="" width={"40px"} height={"40px"} style={{borderRadius:"50%"}}/>
-          </div>
-
-          <div className="notify-name">
-            <p>Kedar Patil</p>
-          </div>
-
-          <div className="notify-duration">
-            <p>8hrs</p>
-          </div>
-        </div>
-
-        <div className="right-content">
-          <div className="right-desc">
-            <p>hey how are you guys!</p>
-          </div>
-
-          <div className="right-icon">
-              <IoHeartOutline style={{fontSize:"24px", marginRight:"1rem"}}/>
-              <GoComment style={{fontSize:"22px"}}/>
-          </div>
-          
-        </div>
-        </div>
-
-
-        <div style={{border:" 1px solid rgb(197, 197, 197)", minWidth:"400px" , height:"max-content" , borderRadius:"10px"}}>
-        <div className="right-header">
-          <div className="notify-picture">
-            <img src="https://t4.ftcdn.net/jpg/06/02/80/95/360_F_602809556_HsRkD6daMX14r9JV1bL2hfZBrKm72ZlG.jpg" alt="" width={"40px"} height={"40px"} style={{borderRadius:"50%"}}/>
-          </div>
-
-          <div className="notify-name">
-            <p>Kedar Patil</p>
-          </div>
-
-          <div className="notify-duration">
-            <p>8hrs</p>
-          </div>
-        </div>
-
-        <div className="right-content">
-          <div className="right-desc">
-            <p>hey how are you guys!</p>
-          </div>
-
-          <div className="right-icon">
-              <IoHeartOutline style={{fontSize:"24px", marginRight:"1rem"}}/>
-              <GoComment style={{fontSize:"22px"}}/>
-          </div>
-          
-        </div>
-        </div>
-
-
+          <button className="plus-button" onClick={togglePopup} >
+           <FiPlus />
+          </button>
         </div>
       </div>
-      </div>
-      
     </>
   );
 };

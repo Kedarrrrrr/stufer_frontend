@@ -25,7 +25,8 @@ const LeftBar = () => {
         <div className="profile">
           <div className="profile-items">
             <Link to={"/"}><GoHomeFill /></Link>
-            <FiBell />
+
+            <Link to={"/notifications"}><FiBell /></Link>
             
             <AddPostPopup />
 
@@ -52,7 +53,7 @@ const LeftBar = () => {
                
               )}
             
-            <IoLogOutOutline onClick={togglePopup} />
+            <IoLogOutOutline onClick={togglePopup} style={{cursor:"pointer"}}/>
           </div>
         </div>
       </div>
