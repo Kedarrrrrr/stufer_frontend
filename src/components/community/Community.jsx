@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Community.css"; // Assuming you have a CSS file for styling
@@ -56,3 +57,14 @@ const Community = () => {
 };
 
 export default Community;
+=======
+import React from 'react'
+
+const Community = () => {
+  return (
+    <div>Community</div>
+  )
+}
+
+export default Community
+>>>>>>> e55a830c641af75ed33807d6477f2ad5839011a6
