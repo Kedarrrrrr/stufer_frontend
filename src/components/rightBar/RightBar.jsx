@@ -7,6 +7,7 @@ import { GoFileMedia } from "react-icons/go";
 
 import { FiPlus } from 'react-icons/fi';
 import { Button } from "react-bootstrap";
+import AddPostPopup from "../leftBar/AddPostPopup";
 
 
 
@@ -26,7 +27,7 @@ const RightBar = () => {
   return (
     <>
 
-      <div className="popup-container">
+      {/* <div className="popup-container">
 
 
 
@@ -43,7 +44,7 @@ const RightBar = () => {
                   className="popup-textarea"
                 ></textarea>
 
-                {/* File Upload */}
+             
                 <div className="media-upload">
                   <label htmlFor="media-input" className="upload-icon-btn" title="Upload Image or Video">
                     <GoFileMedia />
@@ -69,13 +70,13 @@ const RightBar = () => {
             </div>
           </div>
         )}
-      </div>
+      </div> */}
 
       <div className="container">
         <div className="right-post-button">
 
-          <button className="plus-button" onClick={togglePopup} >
-            <FiPlus />
+          <button className="plus-button" >
+         <AddPostPopup/>
           </button>
         </div>
       </div>

@@ -8,7 +8,7 @@ const UserProtector = ({children}) => {
 
     useEffect(() => {
         if (!token) {
-            navigate('/')
+            navigate('/login')
         }
     }, [])
 
